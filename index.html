@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShuttleRock - SignageSquare</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Styles -->
+    <link href="https://socialhub.s3.amazonaws.com/client-bose/production/styles/sr-socialhub.big-screen-display.default.css" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://socialhub.s3.amazonaws.com/client-bose/production/scripts/app-big-screen-display.min.js"></script>
+
+    <style type="text/css" media="screen">
+        body {
+            background: #000!important;
+        }
+
+        .warapper .box_big .user_info__description {
+          font-size: 2.1rem;
+          line-height: 2.1rem;
+          height: 6.3rem;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
+        }
+
+        .warapper .user_info__description {
+          position: absolute;
+          top: 40%;
+          left: 20%;
+          height: 3.5rem;
+          font-size: 1.1rem;
+          line-height: 1.1em;
+          overflow: hidden;
+          width: 75%;
+        }
+    </style>
+</head>
+
+<body>
+    <h5>　</h5>
+    <div class="wrapper">
+      <div ng-app="ngSocialHub" ui-view
+        ng-social-hub-big-screen-display
+        ng-social-hub-customer="news"
+         ng-social-hub-api-suffix=".api.shuttlerock.com"
+         ng-social-hub-board-id="out-and-about"
+         ng-social-hub-locale="en"
+         ng-social-hub-interval="5000"
+         ng-social-hub-backface-color="#000"
+         ng-social-hub-animation-type="flip"
+         ng-social-hub-fixed-center="false"
+         ng-social-hub-auto-reflush="true"
+         ng-social-hub-animation-duration="300"
+      ></div>
+    </div>
+</body>
+</html>
